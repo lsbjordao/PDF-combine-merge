@@ -2,8 +2,4 @@
 input/*
 output/*
 
-# Exceto os arquivos .gitkeep dentro das pastas "input" e "output"
-!input/.gitkeep
-!output/.gitkeep
-
 node_modules
