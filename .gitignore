@@ -1,8 +1,7 @@
-# Ignorar todo o conteúdo das pastas "input" e "output", exceto .gitkeep
+node_modules
+
 input/*
 !input/.gitkeep
 
 output/*
 !output/.gitkeep
-
-node_modules
