@@ -9,8 +9,11 @@ async function combinePDFs() {
   // Lê os nomes de todos os arquivos na pasta "input"
   const fileNames = fs.readdirSync(inputFolderPath);
 
+  // Filtra apenas os arquivos PDF
+  const pdfFileNames = fileNames.filter((fileName) => fileName.toLowerCase().endsWith('.pdf'));
+
   // Ordena os nomes dos arquivos em ordem alfabética
-  const sortedFileNames = fileNames.sort();
+  const sortedFileNames = pdfFileNames.sort();
 
   for (const fileName of sortedFileNames) {
     const filePath = path.join(inputFolderPath, fileName);
