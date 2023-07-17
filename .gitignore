@@ -1,5 +1,8 @@
-# Ignorar todo o conteúdo das pastas "input" e "output"
+# Ignorar todo o conteúdo das pastas "input" e "output", exceto .gitplaceholder
 input/*
+!input/.gitplaceholder
+
 output/*
+!output/.gitplaceholder
 
 node_modules
